@@ -24,11 +24,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+#Site PATH Setting
+source: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io
+destination: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese
+
+#Global Variable Setting
+timezone: Australia/Melbourne
+encoding: utf-8
+
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+# Incrementally build pages
+incremental: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
