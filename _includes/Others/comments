@@ -2,13 +2,13 @@
 
 {% case site.FB.comments.provider %}
 {% when "disqus" %}
-  {% include LessOrMore/comments-providers/disqus %}
+  {% include Others/comments-providers/disqus %}
 {% when "facebook" %}
-  {% include LessOrMore/comments-providers/facebook %}
+  {% include Others/comments-providers/facebook %}
 {% when "duoshuo" %}
-  {% include LessOrMore/comments-providers/duoshuo %}
+  {% include Others/comments-providers/duoshuo %}
 {% when "yungentie" %}
-  {% include LessOrMore/comments-providers/yungentie %}
+  {% include Others/comments-providers/yungentie %}
 {% when "custom" %}
   {% include custom/comments %}
 {% endcase %}

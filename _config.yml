@@ -1,18 +1,19 @@
 # Site settings
-name: Less Or More
+name: 不疯魔不成活
 email: bennetyf@gmail.com
 author: Feng Yuan
-url: http://www.hifreud.com
-resume_site: http://www.hifreud.com/Resume.io/
+url: /404/404.html
+resume_site: /404/404.html
 github: https://github.com/bennetyf
 baseurl: ""
-description: Actually, less is more!
-meta_description: 袁枫;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+description: 从一到无穷大
+meta_description: 个人博客;学而不思则罔;思而不学则殆;生命不息;Coding不止
 motto: It's our wits that make us men.
 banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
+plugins: [jekyll-paginate]
 paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
@@ -22,8 +23,12 @@ highlighter: Pygments
 
 # Build settings
 markdown: kramdown
+kramdown:
+    input: GFM
 
 baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+destination: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io/_site
+source: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io
 
 FB:
   comments :
