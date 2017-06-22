@@ -27,8 +27,7 @@ kramdown:
     input: GFM
 
 #WebSite Analysis
-#baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
-baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
+#baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
 
 #Build Path
 destination: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io/_site
