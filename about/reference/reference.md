@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: article
 title: 相关博客
-permalink: /reference/
 ---
 
 * content

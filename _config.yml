@@ -2,8 +2,9 @@
 name: 不疯魔不成活
 email: bennetyf@gmail.com
 author: Feng Yuan
-url: /404/404.html
+404notfound: /404/404.html
 resume_site: /404/404.html
+home_site: http://fyuan.webutu.com
 github: https://github.com/bennetyf
 baseurl: ""
 description: 从一到无穷大
@@ -33,7 +34,7 @@ kramdown:
 destination: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io/_site
 source: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io
 
-FB:
+FY:
   comments :
     provider : fengyuan
     duoshuo:
