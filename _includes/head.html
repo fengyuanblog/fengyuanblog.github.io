@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{ '/styles/css/fontawesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/styles/css/syntax.css' | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ 'about/RSS/feed.xml' | prepend: site.baseurl }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/about/RSS/feed.xml' | prepend: site.baseurl }}">
 
 	<meta name="keywords" content="{{ page.title | append: ', ' | append: site.name | append: ', ' | append: site.meta_description}}">
 	<meta name="description" content="{{site.meta_description}}">
@@ -51,4 +51,37 @@
 	  		margin-bottom: 10px;
 	  	}
   	</style>
+
+    <!-- mathjax config similar to math.stackexchange -->
+    {% if page.math == true %}
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+            }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            }
+        });
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    {% endif %}
 </head>
