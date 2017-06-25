@@ -24,8 +24,6 @@ highlighter: pygments
 
 # Build settings
 markdown: kramdown
-kramdown:
-    input: GFM
 
 #WebSite Analysis
 #baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
