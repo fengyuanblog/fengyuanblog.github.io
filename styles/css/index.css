@@ -5808,7 +5808,7 @@ body {
 .highlight {
   display: none;
   /* hidden by default, until >480px */
-  padding: 0px;
+  padding: 9px 14px;
  /* background-color: #f7f7f9; This is determined by the pygments syntax css file*/
   border: 2px solid #e1e1e8;
   border-radius: 8px;

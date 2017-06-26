@@ -16,7 +16,7 @@ author: Feng Yuan
 
 例如，没有`explicit`关键字的情形，可以进行隐式类型转换：
 
-{% highlight c++ linenos %}
+```c++
 class Base1{
 public:
     //Constructors
@@ -35,12 +35,11 @@ int main() {
     fun({7,8,9});           //OK，函数参数传递，隐式类型转换
     return 0;
     }
-{% endhighlight %}
+```
 
 如果使用`explicit`关键字声明了构造函数，只可以通过显式初始化：
 
-{% highlight c++ linenos %}
-
+```c++
 class Base1{
 public:
     //Constructors
@@ -62,6 +61,6 @@ int main() {
     fun({7,8,9});           //Error，函数参数传递，隐式类型转换
     return 0;
     }
-{% endhighlight %}
+```
 
 通过构造函数进行的隐式类型转换，多用于单参数构造函数中，因为这种形式在语义上更加明确。上面的例子表明多参数构造函数同样具有这种功能，因此`explicit`关键字可以用于单参数或多参数构造函数中。一般情况下，构造函数都要使用`explicit`关键字声明，如果不声明，就要写明原因。

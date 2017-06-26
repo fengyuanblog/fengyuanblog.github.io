@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
 <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" /> <!-- main stylesheet -->
 <link rel="stylesheet" type="text/css" media="all" href="css/tipsy.css" /> <!-- Tipsy implementation -->
+<link rel="icon" href="images/favicon.png">
 
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
@@ -16,23 +17,17 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
-			
 	universalPreloader();
-						   
 });
 
 $(window).load(function(){
-
 	//remove Universal Preloader
 	universalPreloaderRemove();
-	
 	rotate();
     dogRun();
 	dogTalk();
-	
 	//Tipsy implementation
 	$('.with-tooltip').tipsy({gravity: $.fn.tipsy.autoNS});
-						   
 });
 
 </script>
@@ -62,17 +57,19 @@ $(window).load(function(){
 <!-- Not found text -->
 
 <!-- search form -->
+<!--
 <div class="search">
 	<form name="search" method="get" action="#" />
         <input type="text" name="search" value="Search ..." />
         <input class="with-tooltip" title="Search!" type="submit" name="submit" value="" />
     </form>
 </div>
+-->
 <!-- search form -->
 
 <!-- top menu -->
 <div class="top-menu">
-	<a href="../index.html" class="with-tooltip" title="Return to the home page">Home</a> | <a href="#" class="with-tooltip" title="Navigate through our sitemap">Sitemap</a> | <a href="#" class="with-tooltip" title="Contact us!">Contact</a>
+    <a href="../index.html" class="with-tooltip" title="Return to the home page"><span style="font-size:24px">Go Back to Homepage</span></a>
 </div>
 <!-- top menu -->
 
@@ -80,12 +77,9 @@ $(window).load(function(){
 <!-- dog running -->
 	<div class="dog"></div>
 <!-- dog running -->
-	
 <!-- dog bubble talking -->
 	<div class="dog-bubble">
-    	
     </div>
-    
     <!-- The dog bubble rotates these -->
     <div class="bubble-options">
     	<p class="dog-bubble">
@@ -136,3 +130,4 @@ $(window).load(function(){
 
 </body>
 </html>
+

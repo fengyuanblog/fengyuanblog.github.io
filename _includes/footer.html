@@ -1,9 +1,23 @@
 <footer class="footer" role="contentinfo">
 	<div class="container">
-        <div style="font-size:14px">
-        <p class="copyright">Copyright &copy; 2016-{{ site.time | date: '%Y' }} {{site.author}}</p>
-        <p>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, themed by <a href="{{site.home_site}}" target="_blank">{{site.author}}</a></p>
-        </div>
+	<table width="1140">
+		<td width="560">
+			<div style="font-size:14px">
+        		<p class="copyright">Copyright &copy; 2016-{{ site.time | date: '%Y' }} {{site.author}}</p>
+        		<p>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, themed by <a href="{{site.home_site}}" target="_blank">{{site.author}}</a></p>
+        	</div>
+        </td>
+        <td>
+        	<div style="float:right;">
+        	<span style="font-size:14px"><strong>Follow me: </strong></span>
+        	<a href="https://twitter.com/Bennet15614634" target="_blank"><img src="{{ '/styles/images/Social_Media/twitter.png'| prepend: site.baseurl}}" alt="Twitter" width="30" height="30"/></a>
+        	<a href="https://www.facebook.com/profile.php?id=100006874840870" target="_blank"><img src="{{ '/styles/images/Social_Media/facebook.png'| prepend: site.baseurl}}" alt="Facebook" width="30" height="30"/></a>
+        	<a href="https://www.linkedin.com/in/feng-yuan-10ba2b75/" target="_blank"><img src="{{ '/styles/images/Social_Media/linkedin.png'| prepend: site.baseurl}}" alt="Linkedin" width="30" height="30"/></a>
+        	<a href="https://plus.google.com/u/0/110752567647903784834" target="_blank"><img src="{{ '/styles/images/Social_Media/googleplus.png'| prepend: site.baseurl}}" alt="Google+" width="30" height="30"/></a>
+        	<a href="{{ '/about/rss/feed.xml' | prepend: site.baseurl}}" target="_blank"><img src="{{ '/styles/images/Social_Media/rss.png'| prepend: site.baseurl}}" alt="RSS" width="30" height="30"/></a>
+        	</div>
+        </td>
+      </table>
 	</div>
 </footer>
 
@@ -12,4 +26,3 @@
 <script src="{{ '/styles/js/holder.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
