@@ -4579,7 +4579,6 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 .panel {
   margin-bottom: 20px;
-  width: 108%;
   background-color: #dddddd;
   border: 1px solid transparent;
   border-radius: 4px;
