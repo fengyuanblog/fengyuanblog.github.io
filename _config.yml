@@ -1,5 +1,6 @@
 # Site settings
 name: 不疯魔不成活
+description: 生命不息 &nbsp&nbsp&nbsp&nbsp&nbsp Coding不止
 email: bennetyf@gmail.com
 author: Feng Yuan
 404notfound: /404/404.html
@@ -7,8 +8,7 @@ resume_site: /404/404.html
 home_site: http://fyuan.webutu.com
 github: https://github.com/bennetyf
 baseurl: ""
-description: 从一到无穷大
-meta_description: 个人博客;学而不思则罔;思而不学则殆;生命不息;Coding不止
+meta_description: 枫的小屋;个人博客;不疯魔不成活
 motto: It's our wits that make us men.
 banner: 学而不思则罔，思而不学则殆。
 

@@ -7,12 +7,10 @@
 
     {% include header.html %}
     {% include docs_header.html %}
-    {% if page.title %}
+    {% if page.post %}
       {% include banner.html %}
     {% endif %}
-
     {{ content }}
-
     {% include footer.html %}
 
   </body>

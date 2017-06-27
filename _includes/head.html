@@ -2,7 +2,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ page.title | append: ' - ' |append: site.name }}</title>
+	<title>{{ page.title }}</title>
 
 	<link rel="shortcut icon" href="{{ '/styles/images/favicon.png' | prepend: site.baseurl }}">
 	<link rel="icon" href="{{ '/styles/images/favicon.png' | prepend: site.baseurl }}">
@@ -20,6 +20,8 @@
 	<!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
+
+
     <!--Baidu Analysis
   	<script>
 		var _hmt = _hmt || [];
@@ -32,6 +34,7 @@
 	</script>
     -->
 
+    <!-- Google Analysis JS Codes -->
     <script>
         (function(i,s,o,g,r,a,m){
             i['GoogleAnalyticsObject']=r;
@@ -52,7 +55,7 @@
 	  	}
   	</style>
 
-    <!-- mathjax config similar to math.stackexchange -->
+    <!-- MathJaX Config -->
     {% if page.math == true %}
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({

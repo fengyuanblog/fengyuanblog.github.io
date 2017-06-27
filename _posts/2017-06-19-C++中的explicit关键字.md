@@ -1,5 +1,6 @@
 ---
 layout: post
+post: true
 title: C++中的explicit关键字
 date: 2017-06-19
 category: C++语言
