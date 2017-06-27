@@ -3980,11 +3980,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 8px 16px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #f5f5f5;
-  border-radius: 4px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
 }
 .breadcrumb > li {
   display: inline-block;
@@ -4579,7 +4579,8 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #ffffff;
+  width: 108%;
+  background-color: #dddddd;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -6116,12 +6117,14 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #43759e;
+  /*color: #43759e;*/
+  color: #008b8b;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2c4d68;
+  /*color: #2c4d68;*/
+  color: #ff8c00;
   text-decoration: underline;
 }
 a:focus {
