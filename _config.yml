@@ -14,6 +14,7 @@ banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
+plugins: [jekyll-paginate]
 plugins_dir: [jekyll-paginate]
 paginate: 10
 
@@ -29,8 +30,8 @@ markdown: kramdown
 #baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
 
 #Build Path
-destination: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io/_site
-source: /Users/Bennet/WorkSpace/Personal_Projects/GitPages/Chinese/fyuansite.github.io
+destination: /media/work/Workspace/Personal_Projects/Blog/_site
+source: /media/work/Workspace/Personal_Projects/Blog
 
 FY:
   comments :
