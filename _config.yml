@@ -20,11 +20,14 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
+timezone: Australia/Sydney
+
 github_username: bennetyf
 highlighter: pygments
 
 # Build settings
 markdown: kramdown
+incremental: true
 
 #WebSite Analysis
 #baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
