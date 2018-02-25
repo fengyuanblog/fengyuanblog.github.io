@@ -20,11 +20,16 @@ author: Feng Yuan
 
 1. NPM package manager uses a very different way in managing dependencies. It allows a lot of redenduncy. Sharing one unique module with all other dependent modules can always be a nasty problem. Although there are some methods to enable sharing to some degree, such as the `npm dedupe` command, yet it is not suggested. Thus, it is difficult to manage the packages as a common framework(not impossible). Node packages usually stick closely to your project folder.
 
+
 2. It is possible to symlink a common framework somewhere in your computer to your project folder, such as using the `npm-link-shared` or `npm link` tools. Yet, these commands always first create symlinks in your global *node_modules* folder and then create second symlinks in your project's *node_modules* folder. This can be messy sometimes.
+
 
 3. If you re-install every node module in each of your project *node_modules* folder, it is not only time-comsuming when creating a new project, but also space-comsuming on your hard drives.
 
+
 4. Taking all the above into consideration, I decide the best way is to store a global *package.json* file in a safe place as your common framework. When you need to create new projects, use this file to install all the required modules in the common *node_modules* folder in your project folder.
+
+
 
 ## Directory Strcuture
 
@@ -65,8 +70,12 @@ ng serve
 
 ## Final Remarks
 
+<div style="text-align: justify">
 The common packages used by all A,B,and C projects are stored in the project root *node_modules* folder. In each project folder, local modules can be installed in the local *node_modules* directory. ng will first look for modules in the local *node_modules* directory, then look for modules in the root *node_modules* folder. Thus, we can allow some kind of sharing of node modules among projects in this way.
-
+</div><br/>
+<div style="text-align: justify">
 If you like, you can install all required node packages globally, and then symlink them into your project folder. That can be annoying sometimes because you have to store a lot of packages of different versions in your global folder, most of which you do not need for a specific project. Node follows a very different package management philosophy, so that sharing some unique library across the whole system disobeys this philosophy.
-
+</div><br/>
+<div style="text-align: justify">
 Therefore, keep everything as locally as possible and only share modules locally across a few similar projects. You can store different *package.json* files as different development environments. When you need to create an environment, simply copy the related .json file and `npm install` all the packages. Avoid using symbolic links. NPM is project-oriented.
+</div><br/>
