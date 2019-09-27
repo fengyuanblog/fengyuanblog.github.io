@@ -4,3 +4,4 @@ _site
 .jekyll-cache/
 Gemfile.*
 Gemfile
+_config.yml

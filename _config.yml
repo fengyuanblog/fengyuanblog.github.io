@@ -33,8 +33,8 @@ incremental: false
 #baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
 
 #Build Path
-destination: /media/work/Workspace/Personal_Projects/Blog/_site
-source: /media/work/Workspace/Personal_Projects/Blog
+destination: /media/work/Personal_Projects/Blog/_site
+source: /media/work/Personal_Projects/Blog
 
 sass:
   sass_dir: _sass
