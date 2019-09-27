@@ -5,7 +5,7 @@ email: bennetyf@gmail.com
 author: Feng Yuan
 404notfound: /404/404.html
 resume_site: /404/404.html
-home_site: http://bennetyf.github.io
+home_site: http://fengyuanblog.github.io
 github: https://github.com/bennetyf
 baseurl: ""
 meta_description: 枫的小屋;个人博客;不疯魔不成活
@@ -23,11 +23,11 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 timezone: Australia/Sydney
 
 github_username: bennetyf
-highlighter: pygments
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
-incremental: true
+incremental: false
 
 #WebSite Analysis
 #baidu_analysis: 89d5828f62d1e46378c7ab7e7370b1ee
@@ -35,6 +35,10 @@ incremental: true
 #Build Path
 destination: /media/work/Workspace/Personal_Projects/Blog/_site
 source: /media/work/Workspace/Personal_Projects/Blog
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 FY:
   comments :
